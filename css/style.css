@@ -4,6 +4,11 @@
   padding:0;
 }
 
+/* user-select css property controls whether a text in a HTML element can be selected or not */
+*{
+  user-select: none;
+}
+
 html,body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.7em;
@@ -52,16 +57,37 @@ p {
   padding: 20px;
   text-align: center;
 }
-
+/* current class is to show wich page we are on */
 .nav-bar ul li a:hover, .nav-bar ul li a.current {
   background: #444;
   color: #f7c08a;
 }
 /* container css */
 
+/* utility classes are not specific to any specific area */
 .container {
   margin: auto;
   max-width: 1100px;
   overflow: auto;
   padding: 0 20px;
+}
+
+.text-primary{
+  color: #f1c68f;
+}
+.lead{
+  font-size: 20px;
+}
+.showcase{
+  background: url('../img/showcase.jpg') no-repeat center center/cover;
+  height: 600px;
+}
+.showcase .showcase-content{
+  color: #fff;
+  text-align: center;
+  padding-top: 180px;
+}
+.showcase .showcase-content h1{
+  font-size: 60px;
+  line-height: 1.2em;
 }
